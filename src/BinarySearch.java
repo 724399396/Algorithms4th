@@ -1,3 +1,5 @@
+import edu.princeton.cs.algs4.*;
+
 import java.util.Arrays;
 public class BinarySearch {
 	public static int rank(int key, int[] a ) {
@@ -9,8 +11,7 @@ public class BinarySearch {
 			int mid = lo + (hi - lo)/2;
 			if (key < a[mid])     hi = mid - 1;
 			else if (key > a[mid]) lo = mid + 1;
-			else		      return mid;	
-			 
+			else		      return mid;
 		}
 		return -1;
 	}
